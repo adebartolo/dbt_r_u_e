@@ -5,4 +5,4 @@ sources:
     database: 'dbt-adebartolo'
     tables:
       - name: rat
-      - name: unsanitary_conditions
+      - name: unsanitary_condition
