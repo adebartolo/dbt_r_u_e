@@ -15,11 +15,11 @@ unsanitary_agency as (
     select * from {{ ref('unsanitary_agency_dim') }}
  
 ),
-unsanitary_complaint as (
+unsanitary_complaint_type as (
  
     select * from {{ ref('unsanitary_complaint_dim') }}
  
 )
  
-select DISTINCT * from date, location, unsanitary_agency, unsanitary_complaint
+select DISTINCT * from date, location, unsanitary_agency, unsanitary_complaint_type
 limit 5
