@@ -6,5 +6,6 @@ agency_name
 FROM
 ( SELECT DISTINCT agency, agency_name, SUBSTRING(CAST(created_date as string), 1, 10) AS created_date
 FROM `bigquery-public-data.new_york_311.311_service_requests`
-where complaint_type = 'Rodent' and created_date >= '2018-01-01'
+where complaint_type = 'Rodent'
 )
+where created_date >= '20180101'
