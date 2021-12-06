@@ -1,7 +1,7 @@
 SELECT
-{{ dbt_utils.surrogate_key(['complaint_type']) }} AS complaint_type_dim,
+{{ dbt_utils.surrogate_key(['complaint_type']) }} AS complaint_dim_id,
 complaint_type,
-descriptor as complaint_type_descriptor
+descriptor 
 FROM
 ( SELECT DISTINCT 
 complaint_type,

@@ -3,7 +3,7 @@ SELECT
 agency,
 agency_name
 FROM
-( SELECT DISTINCT agency_name, agency
+( SELECT DISTINCT agency, agency_name
 FROM `bigquery-public-data.new_york_311.311_service_requests`
 where complaint_type = 'Rodent' 
 )

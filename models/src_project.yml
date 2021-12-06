@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: models
-    database: 'dbt-adebartolo'
+    database: dbt-adebartolo
     tables:
       - name: rat
       - name: unsanitary_condition
